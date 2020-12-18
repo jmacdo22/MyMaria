@@ -1,0 +1,146 @@
+body{
+		background-color:#DED9D6;
+		color:#252D35;
+}
+header{
+	font-family:Blackadder ITC;
+	font-size: 7em;
+	text-align: center;
+}
+nav{
+	background-color:#252D35;
+	color:#EDECE8;
+	text-align: center;
+	font-weight: bold;
+	padding-right: 2em;
+	padding-left:2em;
+	position: relative;
+	letter-spacing:0.1em;
+}
+nav ul{
+	list-style-type: none;
+	margin:0;
+}
+nav ul ul{
+	position:absolute;
+	background-color:#252D35;
+	padding: 0;
+	text-align:left;
+	display:none;
+}
+nav li{
+	padding:0.5em;
+	display: inline-block;
+}
+nav ul ul li{
+	border:1px solid #DED9D6;
+	display: block;
+	width: 9em;
+	padding-left: 1em;
+	margin-left: 0;
+}
+nav a{
+	text-decoration: none;
+	display:block;
+}
+nav a:link{
+	color:#EDECE8;
+}
+nav a:visited{
+	color: #DED9D6;
+}
+nav a:hover{ color:#FFFFFF;}
+nav li:hover ul{ display:block; }
+main{
+	float:left;
+	width: 350px;
+	padding: 10px;
+}
+footer{
+	text-align: center;
+	margin-top: 600px;
+	clear: both;
+	position-bottom:relative;
+}
+#wrapper{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background=color:white;
+	border: line;
+}
+#columns{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	margin-left: 10em;
+}
+#gallery{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+img{
+	margin: 1em;
+	box-shadow: 10px 10px #666;
+}
+#videos{
+	display:flex;
+	flex-wrap: wrap;
+	margin-top:1em;
+}
+h1{
+
+}
+aside{
+	flex:1;
+}
+p{
+	flex:2;
+	
+}
+#mygrid{
+	display:grid;
+	grid-template-columns:100 px 200 px 150 px;
+}
+*{
+	box-sizing: border-box;
+}
+.header{
+	background-color:#252D35;
+	color:#EDECE8;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	letter-spacing:0.1em;
+	flex-wrap: nowrap;
+	
+}
+.row {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap:wrap;
+}
+.column {
+  padding: 10px;
+}
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
